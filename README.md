@@ -70,7 +70,7 @@ To run the analysis, follow the steps in the Jupyter Notebook. The notebook incl
 1. Data acquisition and preprocessing: 
 The first step in the project is to obtain and prepare the data for analysis. 
 This involves collecting data from multiple sources, cleaning and formatting the data, and performing any necessary preprocessing steps.
-'''
+```
 There are 19 features: ['state', 'account_length', 'area_code', 'international_plan', 'voice_mail_plan', 'number_vmail_messages', 'total_day_minutes', 'total_day_calls', 'total_day_charge', 'total_eve_minutes', 'total_eve_calls', 'total_eve_charge', 'total_night_minutes', 'total_night_calls', 'total_night_charge', 'total_intl_minutes', 'total_intl_calls', 'total_intl_charge', 'number_customer_service_calls']
 
 The label is churn that takes two values no: customer not leaving, and yes: customer leaving with the following summary
@@ -78,8 +78,7 @@ Train dataset:
  no     3652
 yes     598
 Name: churn, dtype: int64
-
-'''
+```
 <img src="/images/hisplot.png" width="400" align = "center">
 
 ## References:
