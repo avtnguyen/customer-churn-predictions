@@ -109,9 +109,29 @@ Here, Logistic regression, random forest and XGBoost model are constructed and c
 4. Model optimization and deployment: Hyperparameter tuning for the constructed model are performed via various iteration on the model and features to optimize performance.
  Once the model is satisfactory, it can then be deployed for use in the company's retention efforts.
 
+### Results
+
+The best model for churn prediction using the provided dataset is XGBoost with the following parameters and test scores:
+```
+params_xgb
+{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}
+```
+```
+     precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       730
+           1       0.95      0.79      0.86       120
+
+    accuracy                           0.96       850
+   macro avg       0.96      0.89      0.92       850
+weighted avg       0.96      0.96      0.96       850
+```
+Confusion matrix:
+
+<img src="/images/cm.png" width="400" align = "center">
 
 
-## References:
+## References
 * https://www.kaggle.com/c/customer-churn-prediction-2020
 
 ## Contributing Members
