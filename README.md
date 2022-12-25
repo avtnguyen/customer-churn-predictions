@@ -1,6 +1,6 @@
 # Customer Churn Prediction
 
-<img src="/images/subscribe.jpg" width="500" align = "center">
+<img src="/images/subscribe.jpg" width="400" align = "center">
 #### -- Project Status: [Completed]
 
 ## Project Motivations:
@@ -30,6 +30,7 @@ The data is provided in the data folder and is in a CSV format. For more infomra
 
 
 ### Prerequisites 
+
 To run this project, you will need:
 
 Python 3.6 or higher
@@ -41,13 +42,19 @@ xgboost
 ### Installing
 
 Running the analysis
+
 To run the analysis, follow the steps in the Jupyter Notebook. The notebook includes data exploration, preprocessing, and model training and evaluation.
 
 Built With
+
 Python - Programming language
+
 Jupyter Notebook - Interactive coding environment
+
 pandas - Data manipulation and analysis library
+
 scikit-learn - Machine learning library
+
 xgboost - Gradient boosting algorithm
 
 ## References:
