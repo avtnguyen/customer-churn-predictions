@@ -67,7 +67,7 @@ To run the analysis, follow the steps in the Jupyter Notebook. The notebook incl
 * matplotlib and searborn - Data visualization
 
 ### Project pipeline
-1. Data acquisition and preprocessing: 
+1. Data acquisition and exploratory data anslysis (EDA):
 The first step in the project is to obtain and prepare the data for analysis. 
 This involves collecting data from multiple sources, cleaning and formatting the data, and performing any necessary preprocessing steps.
 ```
@@ -79,7 +79,18 @@ Train dataset:
 yes     598
 Name: churn, dtype: int64
 ```
-<img src="/images/hisplot.png" width="400" align = "center">
+Next, we will perform EDA to understand the characteristics of the data and identify any patterns or trends that may be relevant to the churn prediction task. 
+This will involve visualizing the data, calculating summary statistics, and identifying correlations or other relationships between variables. (See exemple below)
+<img src="/images/hisplot.png" width="500" align = "center">
+
+2. Feature engineering
+Based on the insights gained from the EDA, we will then select and create relevant features to use as inputs for the machine learning model. 
+Specifically, we will transform categorical variables to integer values based on the following scheme:
+* Label encoding for the following features: international_plan, voice_mail_plan, churn, area_code
+* One-hot encoding for the following features: states. This will help avoid the problems of ordinal data and biases in the model. 
+Here, we don't have a lot of features and thus, it won't lead to computational and storage overhead
+
+Furthermore, the 
 
 ## References:
 * https://www.kaggle.com/c/customer-churn-prediction-2020
