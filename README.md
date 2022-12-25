@@ -28,6 +28,13 @@ Predicting churn can help a company identify at-risk customers and take steps to
 The data used in this project is a fictional telecom dataset containing customer information whether or not they have churned. 
 The data is provided in the data folder and is in a CSV format. For more infomration on the dataset see [here](https://www.kaggle.com/c/customer-churn-prediction-2020)
 
+### Methods Used
+* Data Cleaning and Wrangling
+* Data Analysis
+* Data Visualization
+* Data Augmentation
+* Machine Learning Model: Logistic Regression, Random Forest, XGBoost
+* Hyperparameter tuning
 
 ### Prerequisites 
 
@@ -41,11 +48,11 @@ xgboost
 
 ### Installing
 
-** Running the analysis**
+**Running the analysis**
 
 To run the analysis, follow the steps in the Jupyter Notebook. The notebook includes data exploration, preprocessing, and model training and evaluation.
 
-** Built With**
+**Built With**
 
 * Python - Programming language
 
@@ -58,6 +65,22 @@ To run the analysis, follow the steps in the Jupyter Notebook. The notebook incl
 * xgboost - Gradient boosting algorithm
 
 * matplotlib and searborn - Data visualization
+
+### Project pipeline
+1. Data acquisition and preprocessing: 
+The first step in the project is to obtain and prepare the data for analysis. 
+This involves collecting data from multiple sources, cleaning and formatting the data, and performing any necessary preprocessing steps.
+'''
+There are 19 features: ['state', 'account_length', 'area_code', 'international_plan', 'voice_mail_plan', 'number_vmail_messages', 'total_day_minutes', 'total_day_calls', 'total_day_charge', 'total_eve_minutes', 'total_eve_calls', 'total_eve_charge', 'total_night_minutes', 'total_night_calls', 'total_night_charge', 'total_intl_minutes', 'total_intl_calls', 'total_intl_charge', 'number_customer_service_calls']
+
+The label is churn that takes two values no: customer not leaving, and yes: customer leaving with the following summary
+Train dataset:
+ no     3652
+yes     598
+Name: churn, dtype: int64
+
+'''
+<img src="/images/hisplot.png" width="400" align = "center">
 
 ## References:
 * https://www.kaggle.com/c/customer-churn-prediction-2020
