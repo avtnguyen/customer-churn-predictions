@@ -50,7 +50,7 @@ xgboost
 
 **Running the analysis**
 
-To run the analysis, follow the steps in the Jupyter Notebook. The notebook includes data exploration, preprocessing, and model training and evaluation.
+To run the analysis, follow the steps in the Jupyter Notebook [See here](https://github.com/avtnguyen/customer-churn-predictions/blob/main/customer_churn_model.ipynb). The notebook includes data exploration, preprocessing, and model training and evaluation.
 
 **Built With**
 
