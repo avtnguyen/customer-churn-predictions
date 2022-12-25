@@ -41,21 +41,23 @@ xgboost
 
 ### Installing
 
-Running the analysis
+** Running the analysis**
 
 To run the analysis, follow the steps in the Jupyter Notebook. The notebook includes data exploration, preprocessing, and model training and evaluation.
 
-Built With
+** Built With**
 
-Python - Programming language
+* Python - Programming language
 
-Jupyter Notebook - Interactive coding environment
+* Jupyter Notebook - Interactive coding environment
 
-pandas - Data manipulation and analysis library
+* pandas - Data manipulation and analysis library
 
-scikit-learn - Machine learning library
+* scikit-learn - Machine learning library
 
-xgboost - Gradient boosting algorithm
+* xgboost - Gradient boosting algorithm
+
+* matplotlib and searborn - Data visualization
 
 ## References:
 * https://www.kaggle.com/c/customer-churn-prediction-2020
