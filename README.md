@@ -90,7 +90,26 @@ Specifically, we will transform categorical variables to integer values based on
 * One-hot encoding for the following features: states. This will help avoid the problems of ordinal data and biases in the model. 
 Here, we don't have a lot of features and thus, it won't lead to computational and storage overhead
 
-Furthermore, the 
+Furthermore, since the churn dataset is an imbalanced, I also test several data augmentation techniques including SMOTE and SMOTE+TOMEK. 
+SMOTE is a technique that generates synthetic data points for the minority class by interpolating between existing minority class data points. 
+The synthetic data points are generated in such a way that they are similar to the original data points, but are not exact copies. 
+This helps to balance the class distribution and improve the model's performance on the minority class.
+
+In addition, SMOTETomek is a combination of SMOTE and Tomek's link undersampling, which removes examples of the majority class that are close to examples of the minority class. 
+This helps to further balance the class distribution and remove potential noisy data points that may have a negative impact on the model's performance.
+
+For further reading about this, see [here](https://imbalanced-learn.org/)
+
+3. Model training and evaluation: With the prepared data and selected features, we will then train and evaluate a machine learning model to predict customer churn. 
+This involves splitting the data into training and test sets, selecting an appropriate model type and hyperparameters, 
+and evaluating the model's performance using metrics such as accuracy, precision, recall and f1.
+
+Here, Logistic regression, random forest and XGBoost model are constructed and compared the performance to obtain the optimum model for the churn prediction. 
+
+4. Model optimization and deployment: Hyperparameter tuning for the constructed model are performed via various iteration on the model and features to optimize performance.
+ Once the model is satisfactory, it can then be deployed for use in the company's retention efforts.
+
+
 
 ## References:
 * https://www.kaggle.com/c/customer-churn-prediction-2020
